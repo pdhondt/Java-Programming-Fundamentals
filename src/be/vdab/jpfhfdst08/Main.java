@@ -4,9 +4,15 @@ public class Main {
     public static void main(String[] args) {
         double standSpaarrekening;
 
+        var intrestPercentage = Spaarrekening.getIntrest();
+        System.out.println("Het intrest percentage van de klasse Spaarrekening bedraagt " + intrestPercentage);
+
         var spaar1 = new Spaarrekening("BE12 3456 7890 1234", 1.5);
-        var spaar2 = new Spaarrekening("BE98 7654 3210 9876", 1.5);
-        var spaar3 = new Spaarrekening("BE65 4321 9876 5432", 1.5, 1000.0);
+        System.out.println("Het intrest percentage van de klasse Spaarrekening bedraagt " + Spaarrekening.getIntrest());
+        var spaar2 = new Spaarrekening("BE98 7654 3210 9876", 2.5);
+        System.out.println("Het intrest percentage van de klasse Spaarrekening bedraagt " + Spaarrekening.getIntrest());
+        var spaar3 = new Spaarrekening("BE65 4321 9876 5432", 3.5, 1000.0);
+        System.out.println("Het intrest percentage van de klasse Spaarrekening bedraagt " + Spaarrekening.getIntrest());
 
         spaar1.storten(100.0);
         standSpaarrekening = spaar1.getSaldo();
