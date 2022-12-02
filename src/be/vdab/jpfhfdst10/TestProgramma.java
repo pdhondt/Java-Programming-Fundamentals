@@ -4,9 +4,9 @@ public class TestProgramma {
     public static void main(String[] args) {
 
         var vrachtwagen1 = new Vrachtwagen();
-        var vrachtwagen2 = new Vrachtwagen("Peter", 150000.0F, 300, 15.5F, "1-ABC-789", 12000.0F);
+        var vrachtwagen2 = new Vrachtwagen("Jan", 150000.0F, 300, 15.5F, "1-ABC-789", 12000.0F);
         var personenwagen1 = new Personenwagen();
-        var personenwagen2 = new Personenwagen("Emma", 35000.0F, 120, 6.3F, "1-XYZ-456", 3, 7);
+        var personenwagen2 = new Personenwagen("Piet", 35000.0F, 120, 6.3F, "1-XYZ-456", 3, 7);
 
         System.out.println("\ntoString() vrachtwagen1:");
         System.out.println(vrachtwagen1);
@@ -39,9 +39,9 @@ public class TestProgramma {
 
         // POLYMORFISME
         var voertuigen = new Voertuig[4];
-        voertuigen[0] = new Vrachtwagen("Tiago", 225000.0F, 350, 23.0F, "1-CDE-357", 13500.0F);
+        voertuigen[0] = new Vrachtwagen("Joris", 225000.0F, 350, 23.0F, "1-CDE-357", 13500.0F);
         voertuigen[1] = vrachtwagen2;
-        voertuigen[2] = new Personenwagen("Lena", 25000.0F, 120, 5.9F, "1-KLM-159", 2, 3);
+        voertuigen[2] = new Personenwagen("Corneel", 25000.0F, 120, 5.9F, "1-KLM-159", 2, 3);
         voertuigen[3] = personenwagen2;
 
         System.out.println("\nGegevens voertuigen via toString() vanuit array met voertuigen:\n");
