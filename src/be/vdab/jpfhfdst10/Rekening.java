@@ -59,4 +59,12 @@ public abstract class Rekening {
     }
 
     public abstract double berekenIntrest();
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Rekening rekening)) return false;
+
+        return rekeningNummer.equals(rekening.getRekeningNummer());
+    }
 }

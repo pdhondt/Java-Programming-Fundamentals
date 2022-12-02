@@ -68,11 +68,28 @@ public class BankBediende {
         rekeningen[2].afhalen(20.0);
         rekeningen[3].storten(300.0);
 
-        var i = 0;
+        // while lus
+        /*var i = 0;
         while (i < rekeningen.length && rekeningen[i] != null) {
             System.out.println("Saldo van de rekening: " +
                     rekeningen[i].getSaldo());
             i++;
+        }*/
+
+        // for-lus ipv while-lus
+        /*for (var i = 0; i < rekeningen.length; i++) {
+            if (rekeningen[i] != null) {
+                System.out.println("Saldo van de rekening: " +
+                        rekeningen[i].getSaldo());
+            }
+        }*/
+
+        // for-each lus of ENHANCED FOR
+        for (var rekening : rekeningen) {
+            if (rekening != null) {
+                System.out.println("Saldo van de rekening: " +
+                        rekening.getSaldo());
+            }
         }
     }
 }
