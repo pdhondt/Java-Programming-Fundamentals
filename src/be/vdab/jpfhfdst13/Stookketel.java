@@ -5,7 +5,7 @@ public class Stookketel implements Vervuiler {
     private float CONorm;
 
     public Stookketel(float CONorm) {
-        this.CONorm = CONorm;
+        setCONorm(CONorm);
     }
 
     public float getCONorm() {
@@ -13,7 +13,9 @@ public class Stookketel implements Vervuiler {
     }
 
     public void setCONorm(float CONorm) {
-        this.CONorm = CONorm;
+        if (CONorm > 0.0) {
+            this.CONorm = CONorm;
+        }
     }
 
     @Override

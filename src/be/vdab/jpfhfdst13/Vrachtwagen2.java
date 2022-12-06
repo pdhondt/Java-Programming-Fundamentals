@@ -43,6 +43,6 @@ public class Vrachtwagen2 extends Voertuig implements Vervuiler {
 
     @Override
     public double berekenVervuiling() {
-        return getKyotoScore() * 20;
+        return getKyotoScore() * 20.0;
     }
 }

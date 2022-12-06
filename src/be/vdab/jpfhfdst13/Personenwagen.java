@@ -57,6 +57,6 @@ public class Personenwagen extends Voertuig implements Vervuiler {
 
     @Override
     public double berekenVervuiling() {
-        return getKyotoScore() * 5;
+        return getKyotoScore() * 5.0;
     }
 }

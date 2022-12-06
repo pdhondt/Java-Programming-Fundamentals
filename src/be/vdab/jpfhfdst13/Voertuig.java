@@ -1,6 +1,6 @@
 package be.vdab.jpfhfdst13;
 
-public abstract class Voertuig {
+public abstract class Voertuig implements Privaat, Milieu {
 
     private String polishouder;
     private float kostprijs;
@@ -88,4 +88,16 @@ public abstract class Voertuig {
     }
 
     public abstract double getKyotoScore();
+
+    @Override
+    public void geefPrivateData() {
+        System.out.println("--- Private data van het voertuig ---");
+        System.out.println("Polishouder: " + polishouder + ", nummerplaat: " + nummerplaat);
+    }
+
+    @Override
+    public void geefMilieuData() {
+        System.out.println("--- Milieu data van het voertuig ---");
+        System.out.println("Aantal PK: " + pk + ", kostprijs: " + kostprijs + ", gemiddeld verbruik: " + gemVerbruik);
+    }
 }
