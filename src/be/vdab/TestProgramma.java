@@ -1,4 +1,12 @@
-package be.vdab.jpfhfdst13;
+package be.vdab;
+
+import be.vdab.util.Milieu;
+import be.vdab.util.Privaat;
+import be.vdab.util.Vervuiler;
+import be.vdab.verwarming.Stookketel;
+import be.vdab.voertuigen.Personenwagen;
+import be.vdab.voertuigen.Voertuig;
+import be.vdab.voertuigen.Vrachtwagen2;
 
 import java.text.DecimalFormat;
 

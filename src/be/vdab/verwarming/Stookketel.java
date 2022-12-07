@@ -1,4 +1,6 @@
-package be.vdab.jpfhfdst13;
+package be.vdab.verwarming;
+
+import be.vdab.util.Vervuiler;
 
 public class Stookketel implements Vervuiler {
 

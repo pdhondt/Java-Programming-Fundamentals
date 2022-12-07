@@ -1,4 +1,6 @@
-package be.vdab.jpfhfdst13;
+package be.vdab.voorwerpen;
+
+import be.vdab.util.Voorwerp;
 
 public abstract class Boek implements Voorwerp {
     private String titel;

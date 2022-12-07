@@ -1,4 +1,4 @@
-package be.vdab.jpfhfdst13;
+package be.vdab.voorwerpen;
 
 public class Woordenboek extends Boek {
     private String taal;

@@ -1,4 +1,6 @@
-package be.vdab.jpfhfdst13;
+package be.vdab.voertuigen;
+
+import be.vdab.util.Vervuiler;
 
 public class Personenwagen extends Voertuig implements Vervuiler {
 
