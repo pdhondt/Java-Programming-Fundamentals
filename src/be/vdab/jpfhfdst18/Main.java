@@ -22,7 +22,12 @@ public class Main {
         System.out.println(vallendeBladerenSeizoen);
         System.out.println(vallendeBladerenSeizoen.ordinal());
 
-
+        var man = new Persoon("Bart", "Simpson", Geslacht.MAN);
+        System.out.println(man);
+        var vrouw = new Persoon("Marge", "Simpson", Geslacht.VROUW);
+        System.out.println(vrouw);
+        var x = new Persoon("R2", "D2", Geslacht.X);
+        System.out.println(x);
 
     }
 }
