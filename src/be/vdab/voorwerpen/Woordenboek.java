@@ -1,15 +1,17 @@
 package be.vdab.voorwerpen;
 
+import be.vdab.util.Isbn13Exception;
+
 public class Woordenboek extends Boek {
     private String taal;
     private static final float WINSTMARGE = 1.75F;
 
-    public Woordenboek() {
-        this("Woordenboek Nederlands", "Van Dale", 25.8F, "verklarend woordenboek", "taal Nederlands");
+    public Woordenboek() throws Isbn13Exception {
+        this("Woordenboek Nederlands", "Van Dale", 25.8F, "verklarend woordenboek", "978-1-2345-6789-7", "taal Nederlands");
     }
 
-    public Woordenboek(String titel, String auteur, float aankoopPrijs, String genre, String taal) {
-        super(titel, auteur, aankoopPrijs, genre);
+    public Woordenboek(String titel, String auteur, float aankoopPrijs, String genre, String isbn13, String taal) throws Isbn13Exception {
+        super(titel, auteur, aankoopPrijs, genre, isbn13);
         setTaal(taal);
     }
 

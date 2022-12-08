@@ -1,15 +1,17 @@
 package be.vdab.voorwerpen;
 
+import be.vdab.util.Isbn13Exception;
+
 public class Leesboek extends Boek {
     private String onderwerp;
     private static final float WINSTMARGE = 1.5F;
 
-    public Leesboek() {
-        this("Leesboek Java", "O Reilly", 10.5F, "genre studie", "overwerp Informatica");
+    public Leesboek() throws Isbn13Exception {
+        this("Leesboek Java", "O Reilly", 10.5F, "genre studie", "978-1-78280-808-4", "onderwerp Informatica");
     }
 
-    public Leesboek(String titel, String auteur, float aankoopPrijs, String genre, String onderwerp) {
-        super(titel, auteur, aankoopPrijs, genre);
+    public Leesboek(String titel, String auteur, float aankoopPrijs, String genre, String isbn13, String onderwerp) throws Isbn13Exception {
+        super(titel, auteur, aankoopPrijs, genre, isbn13);
         setOnderwerp(onderwerp);
     }
 
