@@ -11,6 +11,7 @@ public class cursusMain {
         cursussen.add(new Cursus(1, "Windows", 90));
         cursussen.add(new Cursus(4, "Access", 120));
         cursussen.add(new Cursus(2, "Powerpoint", 80));
+        cursussen.add(new Cursus(6, "Photoshop", 100));
 
         for (var cursus : cursussen) {
             System.out.println(cursus);
