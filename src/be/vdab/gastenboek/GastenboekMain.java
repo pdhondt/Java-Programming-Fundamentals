@@ -19,7 +19,12 @@ public class GastenboekMain {
                 scanner.skip("\n");
                 System.out.println("Geef het bericht in: ");
                 var bericht = scanner.nextLine();
-                gastenboek.add(new GastenboekEntry(naam, bericht));
+                try {
+                    gastenboek.add(new GastenboekEntry(naam, bericht));
+                } catch (IllegalArgumentException ex) {
+                    System.err.println(ex);
+                }
+
                 gastenboekManager.schrijfNaarBestand(gastenboek);
             }
             keuze = maakKeuze();
