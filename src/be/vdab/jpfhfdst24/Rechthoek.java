@@ -10,4 +10,11 @@ public class Rechthoek {
     int getOppervlakte() {
         return lengte * breedte;
     }
+    @Override
+    public String toString() {
+        return "Rechthoek{" +
+                "lengte=" + lengte +
+                ", breedte=" + breedte +
+                '}';
+    }
 }
