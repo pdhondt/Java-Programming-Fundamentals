@@ -1,5 +1,6 @@
 package be.vdab.jpfhfdst24;
 
+import java.math.BigDecimal;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -22,5 +23,9 @@ public class SumMain {
                         .mapToInt(groente -> groente.length())
                         .sum()
         );
+
+        Stream.of(BigDecimal.valueOf(1.1), BigDecimal.valueOf(0.9), BigDecimal.valueOf(0.5))
+                .min((getal1, getal2) -> getal1.compareTo(getal2))
+                .ifPresent(kleinste -> System.out.println(kleinste));
     }
 }
